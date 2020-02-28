@@ -10,11 +10,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using PersonDefinition;
 
 namespace CarManagement
 {
     public class Startup
     {
+        
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -33,10 +35,11 @@ namespace CarManagement
             });
 
 
-            //shopConnectionString
+            //shopConnectionString ///NOT SURE ABOUT THIS
             services.AddDbContext<DbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("shopConnectionString")));
-
+            //var connection = @"Server=ALEXV\\TESTINSTANCE;Database=shop;Trusted_Connection=True;MultipleActiveResultSets=true";
+            //services.AddDbContext<Person>(options => options.UseSqlServer(connection));
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             
