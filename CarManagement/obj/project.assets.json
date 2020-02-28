@@ -4615,6 +4615,42 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "ClientOrdersDefinition/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/ClientOrdersDefinition.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ClientOrdersDefinition.dll": {}
+        }
+      },
+      "FilterSearchDefinition/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/FilterSearchDefinition.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FilterSearchDefinition.dll": {}
+        }
+      },
+      "PersonDefinition/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/PersonDefinition.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PersonDefinition.dll": {}
+        }
+      },
+      "VehicleDefinition/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/VehicleDefinition.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VehicleDefinition.dll": {}
+        }
       }
     }
   },
@@ -12518,14 +12554,38 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "ClientOrdersDefinition/1.0.0": {
+      "type": "project",
+      "path": "../ClienOrdersDefinition/ClientOrdersDefinition.csproj",
+      "msbuildProject": "../ClienOrdersDefinition/ClientOrdersDefinition.csproj"
+    },
+    "FilterSearchDefinition/1.0.0": {
+      "type": "project",
+      "path": "../FilterSearchDefinition/FilterSearchDefinition.csproj",
+      "msbuildProject": "../FilterSearchDefinition/FilterSearchDefinition.csproj"
+    },
+    "PersonDefinition/1.0.0": {
+      "type": "project",
+      "path": "../PersonDefinition/PersonDefinition.csproj",
+      "msbuildProject": "../PersonDefinition/PersonDefinition.csproj"
+    },
+    "VehicleDefinition/1.0.0": {
+      "type": "project",
+      "path": "../src/VehicleDefinition/VehicleDefinition.csproj",
+      "msbuildProject": "../src/VehicleDefinition/VehicleDefinition.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "ClientOrdersDefinition >= 1.0.0",
+      "FilterSearchDefinition >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.10",
+      "PersonDefinition >= 1.0.0",
+      "VehicleDefinition >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12557,7 +12617,20 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "Y:\\dev_work\\CarManagement\\ClienOrdersDefinition\\ClientOrdersDefinition.csproj": {
+              "projectPath": "Y:\\dev_work\\CarManagement\\ClienOrdersDefinition\\ClientOrdersDefinition.csproj"
+            },
+            "Y:\\dev_work\\CarManagement\\FilterSearchDefinition\\FilterSearchDefinition.csproj": {
+              "projectPath": "Y:\\dev_work\\CarManagement\\FilterSearchDefinition\\FilterSearchDefinition.csproj"
+            },
+            "Y:\\dev_work\\CarManagement\\PersonDefinition\\PersonDefinition.csproj": {
+              "projectPath": "Y:\\dev_work\\CarManagement\\PersonDefinition\\PersonDefinition.csproj"
+            },
+            "Y:\\dev_work\\CarManagement\\src\\VehicleDefinition\\VehicleDefinition.csproj": {
+              "projectPath": "Y:\\dev_work\\CarManagement\\src\\VehicleDefinition\\VehicleDefinition.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -14,4 +14,11 @@
     <Folder Include="src\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ClienOrdersDefinition\ClientOrdersDefinition.csproj" />
+    <ProjectReference Include="..\FilterSearchDefinition\FilterSearchDefinition.csproj" />
+    <ProjectReference Include="..\PersonDefinition\PersonDefinition.csproj" />
+    <ProjectReference Include="..\src\VehicleDefinition\VehicleDefinition.csproj" />
+  </ItemGroup>
+
 </Project>

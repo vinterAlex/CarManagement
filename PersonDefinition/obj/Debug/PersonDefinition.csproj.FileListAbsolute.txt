@@ -1,0 +1,4 @@
+Y:\dev_work\CarManagement\PersonDefinition\bin\Debug\PersonDefinition.dll
+Y:\dev_work\CarManagement\PersonDefinition\bin\Debug\PersonDefinition.pdb
+Y:\dev_work\CarManagement\PersonDefinition\obj\Debug\PersonDefinition.dll
+Y:\dev_work\CarManagement\PersonDefinition\obj\Debug\PersonDefinition.pdb

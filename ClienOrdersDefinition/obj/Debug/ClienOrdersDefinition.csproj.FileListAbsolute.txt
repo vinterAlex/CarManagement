@@ -1,0 +1,5 @@
+Y:\dev_work\CarManagement\ClienOrdersDefinition\bin\Debug\ClienOrdersDefinition.dll
+Y:\dev_work\CarManagement\ClienOrdersDefinition\bin\Debug\ClienOrdersDefinition.pdb
+Y:\dev_work\CarManagement\ClienOrdersDefinition\obj\Debug\ClienOrdersDefinition.csprojAssemblyReference.cache
+Y:\dev_work\CarManagement\ClienOrdersDefinition\obj\Debug\ClienOrdersDefinition.dll
+Y:\dev_work\CarManagement\ClienOrdersDefinition\obj\Debug\ClienOrdersDefinition.pdb

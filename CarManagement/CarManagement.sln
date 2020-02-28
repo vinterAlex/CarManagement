@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarManagement", "CarManagement.csproj", "{05E8079F-A488-4C0A-BB3B-6E35E682F1E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarManagement", "CarManagement.csproj", "{05E8079F-A488-4C0A-BB3B-6E35E682F1E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleDefinition", "..\src\VehicleDefinition\VehicleDefinition.csproj", "{F5722727-16A7-4128-BEB6-F1E780D3E6B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonDefinition", "..\PersonDefinition\PersonDefinition.csproj", "{DED2B7A1-5D0F-40EF-BCCE-F5370BE58D4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientOrdersDefinition", "..\ClienOrdersDefinition\ClientOrdersDefinition.csproj", "{F5523C51-8E16-4BA7-8AFD-9E852C586B40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilterSearchDefinition", "..\FilterSearchDefinition\FilterSearchDefinition.csproj", "{42A953A2-B2CD-47FA-97F8-F42D78AC19E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{05E8079F-A488-4C0A-BB3B-6E35E682F1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05E8079F-A488-4C0A-BB3B-6E35E682F1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05E8079F-A488-4C0A-BB3B-6E35E682F1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5722727-16A7-4128-BEB6-F1E780D3E6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5722727-16A7-4128-BEB6-F1E780D3E6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5722727-16A7-4128-BEB6-F1E780D3E6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5722727-16A7-4128-BEB6-F1E780D3E6B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DED2B7A1-5D0F-40EF-BCCE-F5370BE58D4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED2B7A1-5D0F-40EF-BCCE-F5370BE58D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DED2B7A1-5D0F-40EF-BCCE-F5370BE58D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DED2B7A1-5D0F-40EF-BCCE-F5370BE58D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5523C51-8E16-4BA7-8AFD-9E852C586B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5523C51-8E16-4BA7-8AFD-9E852C586B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5523C51-8E16-4BA7-8AFD-9E852C586B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5523C51-8E16-4BA7-8AFD-9E852C586B40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42A953A2-B2CD-47FA-97F8-F42D78AC19E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A953A2-B2CD-47FA-97F8-F42D78AC19E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A953A2-B2CD-47FA-97F8-F42D78AC19E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A953A2-B2CD-47FA-97F8-F42D78AC19E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
