@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using PersonDefinition;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using VehicleDefinition;
+using PersonDefinition;
 
 
 
@@ -21,15 +22,20 @@ namespace CarManagement
     public class CarManagementModel : PageModel
     {
 
-
-
+        Person p = new Person();
+        public string _LastName { get; set; }
 
 
         public void OnGet()
         {
-
+            p.LastName = _LastName;
+            ////
 
 
         }
     }
+
+    
+
+
 }
