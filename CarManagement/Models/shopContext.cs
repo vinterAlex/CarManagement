@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using VehicleDefinition;
 
+
 /// <summary>
 /// this was generated with the following command using "Package Manager Console"
 /// Scaffold-DbContext "Server=ALEXV\TESTINSTANCE;Database=shop;User ID=vinteralex;Password=blestem24;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
@@ -14,7 +15,7 @@ namespace CarManagement.Models
     public partial class shopContext : DbContext
     {
 
-        Vehicle vehicleOject = new Vehicle();
+        Vehicle vehicle_details = new Vehicle();
         public shopContext()
         {
         }
@@ -28,7 +29,7 @@ namespace CarManagement.Models
         public virtual DbSet<Country> Country { get; set; }
         public virtual DbSet<Persons> Persons { get; set; }
         public virtual DbSet<Products> Products { get; set; }
-        public virtual DbSet<Vehicles> Vehicles { get; set; }
+        public virtual DbSet<Vehicle> Vehicles { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -149,14 +150,18 @@ namespace CarManagement.Models
                     .IsUnicode(false);
             });
 
-            modelBuilder.Entity<Vehicles>(entity =>
-            {
-                entity.HasKey(e => e.VehicleId);
 
-                entity.HasIndex(e => new { e.VehicleId, e.Make, e.Model })
+
+            //Vehicle class defined in "VehicleDefinition" namespace
+            //========================================================
+            modelBuilder.Entity<Vehicle>(entity =>
+            {
+                entity.HasKey(e => e.VehicleID);
+
+                entity.HasIndex(e => new { e.VehicleID, e.Make, e.Model })
                     .HasName("VehicleId_Make_Model");
 
-                entity.Property(e => e.VehicleId).HasColumnName("VehicleID");
+                entity.Property(e => e.VehicleID).HasColumnName("VehicleID");
 
                 entity.Property(e => e.DriveType).HasMaxLength(50);
 

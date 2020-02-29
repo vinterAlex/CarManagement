@@ -59,6 +59,7 @@ namespace CarManagement
             }
 
             app.UseHttpsRedirection();
+            
             app.UseStaticFiles();
             app.UseCookiePolicy();
 

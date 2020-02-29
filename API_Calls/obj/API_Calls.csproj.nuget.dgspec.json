@@ -1,0 +1,218 @@
+{
+  "format": 1,
+  "restore": {
+    "Y:\\dev_work\\CarManagement\\API_Calls\\API_Calls.csproj": {}
+  },
+  "projects": {
+    "Y:\\dev_work\\CarManagement\\API_Calls\\API_Calls.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Y:\\dev_work\\CarManagement\\API_Calls\\API_Calls.csproj",
+        "projectName": "API_Calls",
+        "projectPath": "Y:\\dev_work\\CarManagement\\API_Calls\\API_Calls.csproj",
+        "packagesPath": "C:\\Users\\alexv\\.nuget\\packages\\",
+        "outputPath": "Y:\\dev_work\\CarManagement\\API_Calls\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alexv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "Y:\\dev_work\\CarManagement\\CarManagement\\CarManagement.csproj": {
+                "projectPath": "Y:\\dev_work\\CarManagement\\CarManagement\\CarManagement.csproj"
+              },
+              "Y:\\dev_work\\CarManagement\\src\\VehicleDefinition\\VehicleDefinition.csproj": {
+                "projectPath": "Y:\\dev_work\\CarManagement\\src\\VehicleDefinition\\VehicleDefinition.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Y:\\dev_work\\CarManagement\\CarManagement\\CarManagement.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Y:\\dev_work\\CarManagement\\CarManagement\\CarManagement.csproj",
+        "projectName": "CarManagement",
+        "projectPath": "Y:\\dev_work\\CarManagement\\CarManagement\\CarManagement.csproj",
+        "packagesPath": "C:\\Users\\alexv\\.nuget\\packages\\",
+        "outputPath": "Y:\\dev_work\\CarManagement\\CarManagement\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alexv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "Y:\\dev_work\\CarManagement\\ClienOrdersDefinition\\ClientOrdersDefinition.csproj": {
+                "projectPath": "Y:\\dev_work\\CarManagement\\ClienOrdersDefinition\\ClientOrdersDefinition.csproj"
+              },
+              "Y:\\dev_work\\CarManagement\\FilterSearchDefinition\\FilterSearchDefinition.csproj": {
+                "projectPath": "Y:\\dev_work\\CarManagement\\FilterSearchDefinition\\FilterSearchDefinition.csproj"
+              },
+              "Y:\\dev_work\\CarManagement\\PersonDefinition\\PersonDefinition.csproj": {
+                "projectPath": "Y:\\dev_work\\CarManagement\\PersonDefinition\\PersonDefinition.csproj"
+              },
+              "Y:\\dev_work\\CarManagement\\src\\VehicleDefinition\\VehicleDefinition.csproj": {
+                "projectPath": "Y:\\dev_work\\CarManagement\\src\\VehicleDefinition\\VehicleDefinition.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Y:\\dev_work\\CarManagement\\ClienOrdersDefinition\\ClientOrdersDefinition.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Y:\\dev_work\\CarManagement\\ClienOrdersDefinition\\ClientOrdersDefinition.csproj",
+        "projectName": "ClientOrdersDefinition",
+        "projectPath": "Y:\\dev_work\\CarManagement\\ClienOrdersDefinition\\ClientOrdersDefinition.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "Y:\\dev_work\\CarManagement\\FilterSearchDefinition\\FilterSearchDefinition.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Y:\\dev_work\\CarManagement\\FilterSearchDefinition\\FilterSearchDefinition.csproj",
+        "projectName": "FilterSearchDefinition",
+        "projectPath": "Y:\\dev_work\\CarManagement\\FilterSearchDefinition\\FilterSearchDefinition.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "Y:\\dev_work\\CarManagement\\PersonDefinition\\PersonDefinition.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Y:\\dev_work\\CarManagement\\PersonDefinition\\PersonDefinition.csproj",
+        "projectName": "PersonDefinition",
+        "projectPath": "Y:\\dev_work\\CarManagement\\PersonDefinition\\PersonDefinition.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "Y:\\dev_work\\CarManagement\\src\\VehicleDefinition\\VehicleDefinition.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "Y:\\dev_work\\CarManagement\\src\\VehicleDefinition\\VehicleDefinition.csproj",
+        "projectName": "VehicleDefinition",
+        "projectPath": "Y:\\dev_work\\CarManagement\\src\\VehicleDefinition\\VehicleDefinition.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    }
+  }
+}

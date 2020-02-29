@@ -16,9 +16,9 @@ namespace VehicleDefinition
         public string EngineDescription { get; set; }
         public string Make { get; set; }
         public string Model { get; set; }
-        public int ConstructionYear { get; set; }
-        public DateTime ModifyDate { get; set; }
-        public Int64 VehiclePrice { get; set; }
+        public short ConstructionYear { get; set; }
+        public DateTime? ModifyDate { get; set; }
+        public long VehiclePrice { get; set; }
 
         public List<Vehicle> RetrieveAllVehicles()
         {
