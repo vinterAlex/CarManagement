@@ -8,7 +8,19 @@ namespace CarManagement.Models
     {
         Vehicle v = new Vehicle();
 
-        public int VehicleId { get;set;}
+        public int VehicleIds { get;set;}
+        public int VehicleId
+        {
+            get
+            {
+                return v.VehicleID;
+            }
+            set
+            {
+                v.VehicleID = value;
+            }
+        }
+
         public string DriveType { get; set; }
         public string EngineDescription { get; set; }
         public string Make { get; set; }

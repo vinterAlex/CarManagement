@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using VehicleDefinition;
 
 /// <summary>
 /// this was generated with the following command using "Package Manager Console"
@@ -12,6 +13,8 @@ namespace CarManagement.Models
 {
     public partial class shopContext : DbContext
     {
+
+        Vehicle vehicleOject = new Vehicle();
         public shopContext()
         {
         }
