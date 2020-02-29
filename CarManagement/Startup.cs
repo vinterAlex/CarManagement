@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CarManagement.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -35,11 +36,10 @@ namespace CarManagement
             });
 
 
-            //shopConnectionString ///NOT SURE ABOUT THIS
-            services.AddDbContext<DbContext>(options =>
+            // adding the 
+            services.AddDbContext<shopContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("shopConnectionString")));
-            //var connection = @"Server=ALEXV\\TESTINSTANCE;Database=shop;Trusted_Connection=True;MultipleActiveResultSets=true";
-            //services.AddDbContext<Person>(options => options.UseSqlServer(connection));
+
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             

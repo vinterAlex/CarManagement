@@ -1,4 +1,5 @@
 Y:\dev_work\CarManagement\src\VehicleDefinition\bin\Debug\VehicleDefinition.dll
 Y:\dev_work\CarManagement\src\VehicleDefinition\bin\Debug\VehicleDefinition.pdb
+Y:\dev_work\CarManagement\src\VehicleDefinition\obj\Debug\VehicleDefinition.csprojAssemblyReference.cache
 Y:\dev_work\CarManagement\src\VehicleDefinition\obj\Debug\VehicleDefinition.dll
 Y:\dev_work\CarManagement\src\VehicleDefinition\obj\Debug\VehicleDefinition.pdb

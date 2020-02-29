@@ -8,6 +8,9 @@ namespace VehicleDefinition
 {
     public class Vehicle
     {
+        
+
+
         public int VehicleID { get; set; }
         public string DriveType { get; set; }
         public string EngineDescription { get; set; }
@@ -16,6 +19,13 @@ namespace VehicleDefinition
         public int ConstructionYear { get; set; }
         public DateTime ModifyDate { get; set; }
         public Int64 VehiclePrice { get; set; }
+
+        public List<Vehicle> RetrieveAllVehicles()
+        {
+            //to retrieve all vehicles
+            return new List<Vehicle>();
+        }
+       
     
         
     
