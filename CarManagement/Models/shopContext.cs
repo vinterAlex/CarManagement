@@ -1,4 +1,5 @@
 ﻿using System;
+using FilterSearchDefinition;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using VehicleDefinition;
@@ -30,6 +31,8 @@ namespace CarManagement.Models
         public virtual DbSet<Persons> Persons { get; set; }
         public virtual DbSet<Products> Products { get; set; }
         public virtual DbSet<Vehicle> Vehicles { get; set; }
+
+        
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

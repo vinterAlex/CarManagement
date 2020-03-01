@@ -22,13 +22,16 @@ namespace CarManagement
         }
 
         public IList<Vehicle> VehiclesToShow { get;set; } //to retrieve all cars
-        public IList<Vehicle> DistinctData { get; set; }
+
+        
 
 
         public async Task OnGetAsync()
         {
+            
             VehiclesToShow = await _context.Vehicles.Distinct().ToListAsync();
             //VehiclesToShow = await _context.Vehicles.ToListAsync();
+
 
         }
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,8 +9,8 @@ namespace VehicleDefinition
 {
     public class Vehicle
     {
-        
 
+  
 
         public int VehicleID { get; set; }
         public string DriveType { get; set; }
@@ -20,12 +21,8 @@ namespace VehicleDefinition
         public DateTime? ModifyDate { get; set; }
         public long VehiclePrice { get; set; }
 
-        public List<Vehicle> RetrieveAllVehicles()
-        {
-            //to retrieve all vehicles
-            return new List<Vehicle>();
-        }
-       
+
+
     
         
     
