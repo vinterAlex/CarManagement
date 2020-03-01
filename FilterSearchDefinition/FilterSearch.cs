@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace FilterSearchDefinition
 {
-    public class FilterSearch
+    public class FilterSearch 
     {
         public string VehicleDriveTypeFilter  { get; set; }
         public string VehicleEngineDescriptionFilter { get; set; }
