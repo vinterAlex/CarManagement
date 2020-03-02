@@ -9,6 +9,8 @@ namespace FilterSearchDefinition
 {
     public class FilterSearch 
     {
+
+
         public string VehicleDriveTypeFilter  { get; set; }
         public string VehicleEngineDescriptionFilter { get; set; }
         public string VehicleMakeFilters { get; set; }
