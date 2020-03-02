@@ -1,5 +1,8 @@
 Y:\dev_work\CarManagement\FilterSearchDefinition\bin\Debug\FilterSearchDefinition.dll
 Y:\dev_work\CarManagement\FilterSearchDefinition\bin\Debug\FilterSearchDefinition.pdb
+Y:\dev_work\CarManagement\FilterSearchDefinition\bin\Debug\VehicleDefinition.dll
+Y:\dev_work\CarManagement\FilterSearchDefinition\bin\Debug\VehicleDefinition.pdb
 Y:\dev_work\CarManagement\FilterSearchDefinition\obj\Debug\FilterSearchDefinition.csprojAssemblyReference.cache
+Y:\dev_work\CarManagement\FilterSearchDefinition\obj\Debug\FilterSearchDefinition.csproj.CopyComplete
 Y:\dev_work\CarManagement\FilterSearchDefinition\obj\Debug\FilterSearchDefinition.dll
 Y:\dev_work\CarManagement\FilterSearchDefinition\obj\Debug\FilterSearchDefinition.pdb

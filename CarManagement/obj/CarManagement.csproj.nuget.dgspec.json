@@ -106,7 +106,16 @@
       "restore": {
         "projectUniqueName": "Y:\\dev_work\\CarManagement\\FilterSearchDefinition\\FilterSearchDefinition.csproj",
         "projectName": "FilterSearchDefinition",
-        "projectPath": "Y:\\dev_work\\CarManagement\\FilterSearchDefinition\\FilterSearchDefinition.csproj"
+        "projectPath": "Y:\\dev_work\\CarManagement\\FilterSearchDefinition\\FilterSearchDefinition.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "Y:\\dev_work\\CarManagement\\src\\VehicleDefinition\\VehicleDefinition.csproj": {
+                "projectPath": "Y:\\dev_work\\CarManagement\\src\\VehicleDefinition\\VehicleDefinition.csproj"
+              }
+            }
+          }
+        }
       },
       "frameworks": {
         "net472": {}

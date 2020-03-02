@@ -44,5 +44,11 @@
     <Compile Include="FilterSearch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\src\VehicleDefinition\VehicleDefinition.csproj">
+      <Project>{F5722727-16A7-4128-BEB6-F1E780D3E6B7}</Project>
+      <Name>VehicleDefinition</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

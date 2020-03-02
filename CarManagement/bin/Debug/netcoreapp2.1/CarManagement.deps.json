@@ -356,6 +356,9 @@
         }
       },
       "FilterSearchDefinition/1.0.0": {
+        "dependencies": {
+          "VehicleDefinition": "1.0.0"
+        },
         "runtime": {
           "FilterSearchDefinition.dll": {}
         },

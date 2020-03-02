@@ -4627,6 +4627,9 @@
       },
       "FilterSearchDefinition/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "VehicleDefinition": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/FilterSearchDefinition.dll": {}
         },
