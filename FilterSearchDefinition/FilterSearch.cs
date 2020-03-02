@@ -16,6 +16,8 @@ namespace FilterSearchDefinition
         public string VehicleMakeFilters { get; set; }
         public string VehicleModelFilter { get; set; }
         public int VehicleConstructionYearFilter { get; set; }
-        
+
+        public bool MakeChecked { get; set; }
+
     }
 }

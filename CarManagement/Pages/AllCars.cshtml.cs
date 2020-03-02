@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using CarManagement.Models;
 using VehicleDefinition;
+using System.Collections;
 
 namespace CarManagement
 {
@@ -22,14 +23,32 @@ namespace CarManagement
         }
 
         public IList<Vehicle> VehiclesToShow { get;set; } //to retrieve all cars
-        
+        public IList<Vehicle> filterItem { get; set; } //to retrieve Make for filter
+
+        public IList<Vehicle> filterOptions { get; set; }
+
+        //public List<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem> filterOptions { get; set; }
+
+            
 
 
         public async Task OnGetAsync()
         {
-            
+
             VehiclesToShow = await _context.Vehicles.ToListAsync();
 
+            filterOptions = await _context.Vehicles.Distinct().ToListAsync();
+
+
+            //filterOptions = _context.Vehicles.Select(a =>
+            //new Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+            //{
+            //    Value = a.Make.ToString()
+            //}).ToList();
         }
+
+
+
+
     }
 }
