@@ -19,10 +19,10 @@
 
 
 
-@foreach(var item in Model.filterOptions.GroupBy(x=>x.Make).Select(s=>s.First()))
-{
-    @item.Make
-}
+    @foreach (var item in Model.filterOptions.GroupBy(x => x.Make).Select(s => s.First()))
+    {
+        <input type="checkbox" name="check" value="@item.Make" />
+    }
 
 
 
