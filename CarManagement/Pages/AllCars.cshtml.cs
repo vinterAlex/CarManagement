@@ -42,8 +42,8 @@ namespace CarManagement
 
             VehiclesToShow = await _context.Vehicles.ToListAsync();
 
-            filterOptions= await _context.Vehicles.ToListAsync();
-
+            filterOptions= await _context.Vehicles.ToListAsync(); //get all the filter options
+            
             //filterOptionsValidation = await _context.Vehicles.Where(x=>x.Checked_Make() ==true).ToListAsync();
 
         }
