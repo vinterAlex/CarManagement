@@ -27,44 +27,19 @@ namespace CarManagement
         }
 
 
-        public List<Vehicle> somedata { get; set; }
+        public List<Vehicle> filterOptions { get; set; }
 
 
         
 
-        public IList<string> populateFilterItems()
-        {
-            string queryString = "select distinct Make from Vehicles;";
-
-            IList<string> tempList = new List<string>();
-
-            using (SqlConnection connection = new SqlConnection("Server=ALEXV\\TESTINSTANCE;Database=shop;User ID=vinteralex;Password=blestem24;"))
-            {
-                SqlCommand command = new SqlCommand(queryString, connection);
-                connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    if (!reader.IsDBNull(0))
-                    {
-                        tempList.Add(reader[0].ToString());
-                    }
-                }
-                reader.Close();
-            }
-            //string[] carName = tempList.ToArray();
-
-
-            vehicleItemSearch = tempList.ToList();
-
-            return vehicleItemSearch;
-        }
+       
 
         public async Task OnGetAsync()
         {
 
             VehiclesToShow = await _context.Vehicles.ToListAsync();
+
+            filterOptions= await _context.Vehicles.ToListAsync();
 
         }
     }

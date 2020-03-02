@@ -3,7 +3,14 @@
 @page
 @model CarManagement.AllCarsModel
 
-    
+
+<div class="car_filter_search">
+    @foreach (var item in Model.filterOptions.GroupBy(x => x.Make).Select(s => s.First()))
+    {
+        @* <input type="checkbox" name="check" value="@item.Make" />*@
+        @Html.CheckBox("group1", new { id = item.VehicleID })@item.Make
+    }
+</div>
 
 <p>
     <a asp-page="Create">Create New</a>
@@ -13,7 +20,7 @@
     <thead>
         <tr>
             <th>
-                
+
                 @Html.DisplayNameFor(model => model.VehiclesToShow[0].VehicleID)
             </th>
             <th>
