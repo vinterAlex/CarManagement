@@ -2,7 +2,6 @@
 
 @page
 @model CarManagement.AllCarsModel
-
 @**
     @using (Html.BeginForm())
     {
@@ -18,82 +17,83 @@
 *@
 
 
-
-    @foreach (var item in Model.filterOptions.GroupBy(x => x.Make).Select(s => s.First()))
-    {
-        <input type="checkbox" name="check" value="@item.Make" />
-    }
-
-
-
-
+    <div class="car_filter_search">
+        @foreach (var item in Model.filterOptions.GroupBy(x => x.Make).Select(s => s.First()))
+        {
+            @* <input type="checkbox" name="check" value="@item.Make" />*@
+            @Html.CheckBox("group1", new { id = item.VehicleID })@item.Make
+        }
+    </div>
 
 
 
 
-    <p>
-        <a asp-page="Create">Create New</a>
-        <input id="Text1" type="text" />
-    </p>
-    <table class="table">
-        <thead>
+
+
+
+<p>
+    <a asp-page="Create">Create New</a>
+    <input id="Text1" type="text" />
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+
+                @Html.DisplayNameFor(model => model.VehiclesToShow[0].VehicleID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VehiclesToShow[0].DriveType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VehiclesToShow[0].EngineDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VehiclesToShow[0].Make)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VehiclesToShow[0].Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VehiclesToShow[0].ConstructionYear)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VehiclesToShow[0].VehiclePrice)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.VehiclesToShow)
+        {
             <tr>
-                <th>
-
-                    @Html.DisplayNameFor(model => model.VehiclesToShow[0].VehicleID)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.VehiclesToShow[0].DriveType)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.VehiclesToShow[0].EngineDescription)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.VehiclesToShow[0].Make)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.VehiclesToShow[0].Model)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.VehiclesToShow[0].ConstructionYear)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.VehiclesToShow[0].VehiclePrice)
-                </th>
-                <th></th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VehicleID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DriveType)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EngineDescription)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Make)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Model)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ConstructionYear)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VehiclePrice)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.VehicleID">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.VehicleID">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.VehicleID">Delete</a>
+                </td>
             </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.VehiclesToShow)
-            {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.VehicleID)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.DriveType)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.EngineDescription)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Make)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Model)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.ConstructionYear)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.VehiclePrice)
-                    </td>
-                    <td>
-                        <a asp-page="./Edit" asp-route-id="@item.VehicleID">Edit</a> |
-                        <a asp-page="./Details" asp-route-id="@item.VehicleID">Details</a> |
-                        <a asp-page="./Delete" asp-route-id="@item.VehicleID">Delete</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+        }
+    </tbody>
+</table>
