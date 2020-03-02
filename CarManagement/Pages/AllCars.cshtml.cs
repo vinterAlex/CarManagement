@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using CarManagement.Models;
 using VehicleDefinition;
-using System.Data.SqlClient;
-using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Web;
 
 namespace CarManagement
 {
@@ -28,10 +26,10 @@ namespace CarManagement
 
 
         public List<Vehicle> filterOptions { get; set; }
-
+        
         public List<Vehicle> filterOptionsValidation { get; set; }
 
-
+        public IQueryable<Vehicle> rezultate_masini { get; set; }
 
 
 
@@ -39,13 +37,25 @@ namespace CarManagement
 
         public async Task OnGetAsync()
         {
-
-            VehiclesToShow = await _context.Vehicles.ToListAsync();
-
-            filterOptions= await _context.Vehicles.ToListAsync(); //get all the filter options
             
+
+
+            VehiclesToShow = await _context.Vehicles.Take(20).ToListAsync();
+
+            filterOptions = await _context.Vehicles.ToListAsync();
+
+            
+
+
+            //filterOptions= await _context.Vehicles.ToListAsync(); //get all the filter options
+
             //filterOptionsValidation = await _context.Vehicles.Where(x=>x.Checked_Make() ==true).ToListAsync();
 
         }
-    }
+
+
+
+
+
+        }
 }

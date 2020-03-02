@@ -3,21 +3,21 @@
 @page
 @model CarManagement.AllCarsModel
 @*
-    <div class="car_filter_search">
-        @foreach (var item in Model.filterOptions.GroupBy(x => x.Make).Select(s => s.First()))
-        {
+        <div class="car_filter_search">
+            @foreach (var item in Model.filterOptions.GroupBy(x => x.Make).Select(s => s.First()))
+            {
 
-             <input type="checkbox" name="check" value="@item.Make" />
+                 <input type="checkbox" name="check" value="@item.Make" />
 
-@Html.CheckBox("group1", new { id = item.VehicleID })@item.Make
+    @Html.CheckBox("group1", new { id = item.VehicleID })@item.Make
 
-    }
-</div>
+        }
+    </div>
 
 
-<input type="submit" class="btn btn-outline-primary rounded-0" value="Submit" />
-    *@
-
+    <input type="submit" class="btn btn-outline-primary rounded-0" value="Submit" />
+*@
+    <a id="MainContent_ctl00_SomeLinkButton" class="btn btn-primary btn-sm" href="~/HomeShop" href="javascript:__doPostBack(&#39;ctl00$MainContent$ctl00$lSomeLinkButton&#39;,&#39;&#39;)">Back</a>
 
 
 
@@ -25,16 +25,22 @@
     <h5 class="text-center text-uppercase">Filter car values</h5>
     @using (Html.BeginForm())
     {
-        <table>
-            @foreach (var item in Model.filterOptions.GroupBy(x => x.Make).Select(s => s.First()))
-            {
-                <tr>
-                    @Html.CheckBox("group1", new { id = item.VehicleID })@item.Make
-                </tr>
+<table>
+    @foreach (var item in Model.filterOptions.GroupBy(x => x.Make).Select(s => s.First()))
+    {
+        <tr>
+            @Html.CheckBox("group1", new { id = item.VehicleID })@item.Make
+        </tr>
 
-            }
-        </table>
-        <input type="submit" class="btn btn-outline-primary rounded-0" value="Submit" />
+
+
+    }
+<td>
+    <hr />
+    <input type="submit" class="btn btn-outline-primary rounded-0" value="Filter" />
+</td>
+</table>
+
     }
 </div>
 
@@ -43,13 +49,14 @@
 
 
 
-
-
+<hr />
+<!--
 
 <p>
     <a asp-page="Create">Create New</a>
     <input id="Text1" type="text" />
 </p>
+    -->
 <table class="table">
     <thead>
         <tr>
@@ -112,3 +119,5 @@
         }
     </tbody>
 </table>
+
+

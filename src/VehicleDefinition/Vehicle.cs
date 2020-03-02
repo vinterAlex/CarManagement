@@ -20,10 +20,9 @@ namespace VehicleDefinition
         public DateTime? ModifyDate { get; set; }
         public long VehiclePrice { get; set; }
 
-        //public bool Checked_Make()
-        //{
-        //    return true;
-        //}
+        //public bool CheckBox_Checked { get; set; }
+
+
         
 
 

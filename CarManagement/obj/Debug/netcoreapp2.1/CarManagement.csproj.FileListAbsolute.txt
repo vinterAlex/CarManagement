@@ -26,7 +26,6 @@ Y:\dev_work\CarManagement\CarManagement\obj\Debug\netcoreapp2.1\CarManagement.Ta
 Y:\dev_work\CarManagement\CarManagement\obj\Debug\netcoreapp2.1\CarManagement.RazorCoreGenerate.cache
 Y:\dev_work\CarManagement\CarManagement\obj\Debug\netcoreapp2.1\Razor\Pages\About.cshtml.g.cs
 Y:\dev_work\CarManagement\CarManagement\obj\Debug\netcoreapp2.1\Razor\Pages\AllCars.cshtml.g.cs
-Y:\dev_work\CarManagement\CarManagement\obj\Debug\netcoreapp2.1\Razor\Pages\Contact.cshtml.g.cs
 Y:\dev_work\CarManagement\CarManagement\obj\Debug\netcoreapp2.1\Razor\Pages\Error.cshtml.g.cs
 Y:\dev_work\CarManagement\CarManagement\obj\Debug\netcoreapp2.1\Razor\Pages\Index.cshtml.g.cs
 Y:\dev_work\CarManagement\CarManagement\obj\Debug\netcoreapp2.1\Razor\Pages\Privacy.cshtml.g.cs
@@ -42,3 +41,4 @@ Y:\dev_work\CarManagement\CarManagement\obj\Debug\netcoreapp2.1\CarManagement.Vi
 Y:\dev_work\CarManagement\CarManagement\obj\Debug\netcoreapp2.1\CarManagement.csproj.CopyComplete
 Y:\dev_work\CarManagement\CarManagement\obj\Debug\netcoreapp2.1\CarManagement.dll
 Y:\dev_work\CarManagement\CarManagement\obj\Debug\netcoreapp2.1\CarManagement.pdb
+Y:\dev_work\CarManagement\CarManagement\obj\Debug\netcoreapp2.1\Razor\Pages\HomeShop.cshtml.g.cs
