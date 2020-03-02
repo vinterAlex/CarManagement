@@ -2,15 +2,49 @@
 
 @page
 @model CarManagement.AllCarsModel
+@*
+    <div class="car_filter_search">
+        @foreach (var item in Model.filterOptions.GroupBy(x => x.Make).Select(s => s.First()))
+        {
 
+             <input type="checkbox" name="check" value="@item.Make" />
 
-<div class="car_filter_search">
-    @foreach (var item in Model.filterOptions.GroupBy(x => x.Make).Select(s => s.First()))
-    {
-        @* <input type="checkbox" name="check" value="@item.Make" />*@
-        @Html.CheckBox("group1", new { id = item.VehicleID })@item.Make
+@Html.CheckBox("group1", new { id = item.VehicleID })@item.Make
+
     }
 </div>
+
+
+<input type="submit" class="btn btn-outline-primary rounded-0" value="Submit" />
+    *@
+
+
+
+
+<div class="container py-4">
+    <h5 class="text-center text-uppercase">Filter car values</h5>
+    @using (Html.BeginForm())
+    {
+        <table>
+            @foreach (var item in Model.filterOptions.GroupBy(x => x.Make).Select(s => s.First()))
+            {
+                <tr>
+                    @Html.CheckBox("group1", new { id = item.VehicleID })@item.Make
+                </tr>
+
+            }
+        </table>
+        <input type="submit" class="btn btn-outline-primary rounded-0" value="Submit" />
+    }
+</div>
+
+
+
+
+
+
+
+
 
 <p>
     <a asp-page="Create">Create New</a>

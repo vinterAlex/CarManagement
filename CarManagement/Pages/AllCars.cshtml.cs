@@ -29,10 +29,13 @@ namespace CarManagement
 
         public List<Vehicle> filterOptions { get; set; }
 
+        public List<Vehicle> filterOptionsValidation { get; set; }
 
-        
 
-       
+
+
+
+
 
         public async Task OnGetAsync()
         {
@@ -40,6 +43,8 @@ namespace CarManagement
             VehiclesToShow = await _context.Vehicles.ToListAsync();
 
             filterOptions= await _context.Vehicles.ToListAsync();
+
+            //filterOptionsValidation = await _context.Vehicles.Where(x=>x.Checked_Make() ==true).ToListAsync();
 
         }
     }
